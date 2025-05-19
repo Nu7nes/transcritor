@@ -5,7 +5,7 @@ services:
     build:
       context: .
     restart: unless-stopped
-    container_name: api-container
+    container_name: api-transcritor
     ports:
       - "8100:8100"
     volumes:
