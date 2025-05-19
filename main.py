@@ -7,7 +7,7 @@ import subprocess
 from faster_whisper import WhisperModel
 
 # Define caminho do ffmpeg
-os.environ["PATH"] += os.pathsep + r"/\ffmpeg-7.1.1\bin"
+# os.environ["PATH"] += os.pathsep + r"/\ffmpeg-7.1.1\bin"
 
 # Inicia FastAPI
 app = FastAPI()
