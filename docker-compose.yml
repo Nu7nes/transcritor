@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  api_transcritor:
+    build:
+      context: .
+    restart: unless-stopped
+    container_name: api-container
+    ports:
+      - "8100:8100"
+    volumes:
+      - transcitor_data:/transcritor/data
+    networks:
+      - n8n-stack_default
+
+volumes:
+  transcitor_data:
+
+networks:
+  n8n-stack_default:
+    external: true
