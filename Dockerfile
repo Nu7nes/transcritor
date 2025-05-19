@@ -2,7 +2,7 @@
 FROM python:3.10-slim
 
 # Evita prompts interativos
-ENV DEBIAN_FRONTEND=noninteractive
+# ENV DEBIAN_FRONTEND=noninteractive
 
 # Instala ffmpeg e dependências
 RUN apt-get update && \
